@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Basic CSS for the portfolio page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#hero {
+    background-color: #ff9a9e;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container img.profile-img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#projects .project {
+    margin-bottom: 20px;
+}
+
+#projects .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#resume .btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+#resume .btn:hover {
+    background-color: #5755d9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Sai Pranavi</h1>
+            <p>A passionate developer with expertise in creating web applications.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/020/389/525/original/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg" alt="Your Image" class="profile-img">
+            <p>Hello! I'm Sai Pranavi, a passionate and experienced Full Stack Developer with a knack for creating efficient and scalable web applications. With a strong background in JavaScript, React, Node.js, and a variety of other modern technologies, I excel in building dynamic user experiences and robust backend systems. My expertise spans across both front-end and back-end development, allowing me to deliver comprehensive solutions that meet diverse business needs.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>HTML & CSS</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Search Engine</h3>
+                <img src="https://www.webalive.com.au/wp-content/uploads/2013/08/An-Introduction-to-Search-Engines.jpg" alt="Project Image">
+                <p>Like most search engines, this one also has a crawler whose basic aim is to retrieve the source code of a given URL and then break the content into words with which we can create an array of tag words which will represent the content of the site. It is not a fool proof method, but can work for sites with lots of words in it, like a blog or article or a discussion forum, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.html" class="btn" target="_blank">My Resume</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: myportfolio1@gmail.com</p>
+            <p>Phone: +91 67878268</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sai Pranavi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
